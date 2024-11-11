@@ -1,0 +1,15 @@
+{
+  "name": "myApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  
+  "plugins": {
+      "Camera": {
+        "photo": true,
+        "saveToGallery": false,
+        "resultType": "DataUrl"
+      }
+    } 
+}

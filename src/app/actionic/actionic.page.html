@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>actionic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">actionic</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Botón para tomar la foto -->
+  <ion-button (click)="takePhoto()">Tomar Foto</ion-button>
+
+  <!-- Mostrar la foto capturada si está disponible -->
+  <img *ngIf="photo" [src]="photo" />
+</ion-content>
